@@ -30,3 +30,17 @@ export const wordCombinations = [
   ['화상', '치료'],
   ['화상', '회복'],
 ];
+
+/**
+ * @param {string} pre 
+ * @param {string} suf 
+ * @returns {RegExp}
+ */
+const createWordComboRegExp = (pre, suf) => (new RegExp(`${pre}(.*?)${suf}`));
+
+export const wordComboPresets = wordCombinations.map(([pre, suf]) => (
+  {
+    combination: [pre, suf],
+    regex: createWordComboRegExp(pre, suf),
+  }
+));
