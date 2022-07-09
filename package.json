@@ -1,0 +1,8 @@
+{
+  "name": "check-drug-description",
+  "description": "Use regular expression to check if product descriptions violate FDA regulations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module"
+}
