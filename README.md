@@ -1,2 +1,3 @@
-# check-drug-description
-Use regular expression to check if product descriptions violate FDA regulations
+# Drug Description Checker
+
+Check if drug descriptions include illegal words or expressions.
